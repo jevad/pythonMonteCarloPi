@@ -27,4 +27,4 @@ python pi_parallel.py [optional arguments]
 ```
 The first argument is the number of iterations to run -- make it a positive integer.  If no first argument is given a default of `1000000` is used.
 
-The second argument is the number of CPU cores to use.  If no argument is given, then the value returned by `max(1, multiprocessing.cpu_count() - 1)` is used (that is, one less than the number of cores seen by the python interpreter is used).
+The second argument is the number of CPU cores to use, which should be a positive integer.  If no argument is given, then the value returned by `max(1, multiprocessing.cpu_count() - 1)` is used (that is, one less than the number of cores seen by the python interpreter is used).
